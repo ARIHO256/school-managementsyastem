@@ -44,7 +44,7 @@
             <form class="login100-form validate-form" method="post" action="{% url 'login' %}">
                 {% csrf_token %}
                 <span class="login100-form-title">
-                   <h2>We missed you alot Welcome back</h2>
+                  <h2>Administrative Tasks</h2>
                                 </span>
                 <span class="error-msg"> 
                     {% if form.errors %}
@@ -133,13 +133,15 @@
       font-family: sans-serif;
       font-weight: bolder;
       padding-left: 20px;
+      color: blue;
   }
 
   h2{
-    font-size: 1rem;
+    font-size: 2rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder;
     padding-left: 20px;
+    color: blue;
 }
   body{
     background-image: url("{% static 'dist/img/bass.jpg' %}");
